@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CRUD Operation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do-container">
+        <header class="header">
+          <h1 class="title">CRUD Operation</h1>
+          <img class="add add-icon" src="/add.svg" alt="add task" />
+        </header>
+
+        <!-- create task  -->
+        <div class="add-task">
+          <header class="add-task-header">
+            <h4>Add Task</h4>
+            <img src="/close.svg" alt="close" class="close-icon" />
+          </header>
+          <div>
+            <form class="add-task-content">
+              <textarea
+                name="text"
+                id="ip-text"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <input type="date" name="date" id="ip-date" required />
+              <button type="submit" class="btn">Save</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- tasks  -->
+        <div class="tasks"></div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
